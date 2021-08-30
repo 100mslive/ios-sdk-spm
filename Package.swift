@@ -9,7 +9,9 @@ let package = Package(
             name: "HMSSDK",
             targets: ["HMSSDK"]),
     ],
-    dependencies: [],
+    dependencies: [
+    	.package(url: "https://github.com/100mslive/webrtc-ios/", from: "1.0.4515"),
+    ],
     targets: [
         .binaryTarget(
             name: "HMSSDK", 

@@ -3,14 +3,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "HMSSDK",    
+    name: "HMSSDK",
+    platforms: [.iOS(.v10)],    
     products: [
         .library(
             name: "HMSSDK",
             targets: ["HMSSDK"]),
     ],
     dependencies: [
-    	.package(url: "https://github.com/100mslive/webrtc-ios/", from: "1.0.4515"),
+    	.package(url: "https://github.com/100mslive/webrtc-ios.git", from: "1.0.4515"),
     ],
     targets: [
         .binaryTarget(

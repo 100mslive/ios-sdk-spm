@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "HMSSDK",
-            targets: ["HMSSDK"]),
+            targets: ["HMSSDK", "WebRTC"]),
     ],
     dependencies: [],
     targets: [
